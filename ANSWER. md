@@ -1,0 +1,23 @@
+ 1,Mention two parts of Express that you learned about this week.
+     1, The express framework is built on top of the node.js framework and helps in fast-tracking development of server-based applications. Express router module ships with Express, you can get it out of the box.  It’s a built-in middleware
+    2,one the main benefits of using Express is routing. The ability to have separate request handlers for each URL and method combination.
+ 
+
+ 2,Describe Middleware?
+    	middleware is a function that intercepts a process, it runs some code and it continues  with the original process. Injecting some code into an existing process. 
+
+      four types of middleware:
+        1, built-in middleware: functions that come with Express
+        2, third-party middleware: function that we install through NPM
+        3, custom middleware: functions that write ourselves
+        4, error middleware functions that catch errors in the middleware stack
+
+ 3,Describe a Resource?
+    Everything you’re interacting with is a resource, and each resource is accessible via unique URL.
+
+ 4, What can the API return to help clients know if a request was successful?
+    You can return clients a status code 200 with a generic message that says your request was successful.
+
+ 5, How can we partition our application into sub-applications?
+    Routing gives us the ability to have separate request handlers for each URL and method combination. 
+  	Now with Express we can have a function for each endpoint, and no matter how many endpoints we have, and we will have different request handler functions that all do different things. 
